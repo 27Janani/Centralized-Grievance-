@@ -1,10 +1,10 @@
-Centralized Grievance Portal
+# Centralized Grievance Portal
 
-Overview
+## Overview
 
 The Central Grievance Portal is a web-based application that enables users to file complaints and monitor status updates in real-time. Administrators can much efficiently ensure accountability for true grievances.
 
-Features
+## Features
 
 Add Login & Registration: Exceptions Management.
 
@@ -18,7 +18,15 @@ Notifications: Alert by Email/SMS on complaint status changes
 
 Reports & Analytics
 
-API Endpoints
+## Tech Stack
+
+    Frontend: React.js / Vue.js
+    Backend: Node.js with Express / Django / Flask
+    Database: MySQL / PostgreSQL / MongoDB
+    Authentication: JWT / OAuth
+    Hosting: AWS / Firebase / DigitalOcean
+
+## API Endpoints
 
 Hear POST /register – Register a user
 
@@ -30,7 +38,7 @@ GET /complaint/:id – Get complaint status
 
 PUT /complaint/:id – Update complaint status(Admin only)
 
-Contributing
+## Contributing
 
 Fork the repository
 
@@ -40,6 +48,6 @@ Commit changes
 
 Submit a pull request
 
-License
+## License
 
 License This project is licensed under the MIT License.
