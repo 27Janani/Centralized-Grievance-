@@ -2,51 +2,65 @@
 
 ## Overview
 
-The Central Grievance Portal is a web-based application that enables users to file complaints and monitor status updates in real-time. Administrators can much efficiently ensure accountability for true grievances.
+The Centralized Grievance Portal is a blockchain-powered platform built on Algorand, designed to securely manage and track complaints with real-time updates. By leveraging Algorand’s fast and efficient blockchain, the system ensures transparency, immutability, and tamper-proof complaint records, providing a trustworthy and auditable grievance resolution process.
 
 ## Features
-
-Add Login & Registration: Exceptions Management.
-
-Users can file the complaints with their details and attach files.
-
-Real-time Updates: Short code that generates real-time updates about the status of complaint (Pending, In Progress, Resolved).
-
-Admin Dashboard : View, Manage and Respond to Complaints.
-
-Notifications: Alert by Email/SMS on complaint status changes
-
-Reports & Analytics
+- **Decentralized Complaint Logging** – Users submit grievances, which are recorded immutably on the Algorand blockchain.
+- **Real-Time Status Updates** – Track complaint progress (Pending, In Review, Resolved) with instant blockchain updates.
+- **Smart Contracts for Resolution Workflow** – Automated rules for complaint escalation and resolution.
+- **Tamper-Proof Records** – All grievances and responses are stored securely using Algorand Smart Contracts (ASC1).
+- **User & Admin Roles** – Role-based access for users, administrators, and auditors.
+- **Audit Trail** – Full transparency with a verifiable history of complaint resolutions.
+- **Fast & Low-Cost Transactions** – Powered by Algorand’s high-speed, low-fee blockchain.
+- **Integration with Algorand Wallets** – Secure user authentication and complaint submission.
 
 ## Tech Stack
+- ***Blockchain***: Algorand
+- ***Smart Contracts***: PyTeal (Python-based smart contracts for Algorand)
+- ***Frontend***: React.js / Next.js
+- ***Backend***: Node.js / FastAPI
+- ***Database***: PostgreSQL / IPFS (for metadata & document storage)
+- ***Authentication***: Algorand Wallets (Pera Wallet, MyAlgo)
+- ***Payments***: ALGO for priority grievance handling
+- ***Hosting***: AWS / Vercel / Fleek
 
-    Frontend: React.js / Vue.js
-    Backend: Node.js with Express / Django / Flask
-    Database: MySQL / PostgreSQL / MongoDB
-    Authentication: JWT / OAuth
-    Hosting: AWS / Firebase / DigitalOcean
+## Smart Contract Workflow
+
+ 1️. User submits complaint → Recorded on blockchain
+ 
+ 2️. Admin reviews and updates status → Smart contract logs updates
+ 
+ 3️. Complaint resolution recorded → Immutable final status stored
+ 
+ 4️. Audit trail accessible → Ensuring transparency
 
 ## API Endpoints
 
-Hear POST /register – Register a user
+#### Authentication & User Management
 
-Example Usage: POST /login – Authenticate user
+    POST /register – Register a new user
+    POST /login – User authentication
 
-POST /complaint – file a complaint
+#### Complaint Management
 
-GET /complaint/:id – Get complaint status
+    POST /complaint – Submit a new grievance
+    GET /complaint/:id – Retrieve the status of a complaint
+    PUT /complaint/:id – Update complaint status (Admin only)
 
-PUT /complaint/:id – Update complaint status(Admin only)
+#### Admin Functions
+
+    GET /complaints – View all complaints (Admin only)
+    DELETE /complaint/:id – Remove a complaint (Admin only)
 
 ## Contributing
 
-Fork the repository
+1. Fork the repository
 
-Create a feature branch
+2. Create a feature branch
 
-Commit changes
+3. Commit changes
 
-Submit a pull request
+4. Submit a pull request
 
 ## License
 
